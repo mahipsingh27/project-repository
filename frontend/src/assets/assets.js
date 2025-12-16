@@ -113,7 +113,7 @@ export const products = [
         category: "Processor",
         subCategory: "Intel",
         date: 1716621345448,
-        bestseller: true
+        bestseller: false
     },
     {
         _id: "aaaac",
@@ -135,7 +135,7 @@ export const products = [
         category: "Processor",
         subCategory: "Intel",
         date: 1716621345448,
-        bestseller: true
+        bestseller: false
     },
     {
         _id: "aaaae",
@@ -304,12 +304,12 @@ export const products = [
     },
     {
         _id: "aaaat",
-        name: "RTX 4060 Ti",
+        name: "RX 9070 XT",
         description: "High performance gpu with ray tracing.",
         price: 35000,
         image: [p_img20],
         category: "GraphicsCard",
-        subCategory: "Nvidia",
+        subCategory: "AMD",
         date: 1716633245448,
         bestseller: false
     },
@@ -322,7 +322,7 @@ export const products = [
         category: "GraphicsCard",
         subCategory: "Nvidia",
         date: 1716634345448,
-        bestseller: false
+        bestseller: true
     },
     {
         _id: "aaaav",
@@ -348,12 +348,12 @@ export const products = [
     },
     {
         _id: "aaaax",
-        name: "RTX 5050",
+        name: "RX 7900 XTX",
         description: "High performance gpu with ray tracing.",
-        price: 25000,
+        price: 75000,
         image: [p_img24],
         category: "GraphicsCard",
-        subCategory: "Nvidia",
+        subCategory: "AMD",
         date: 1716637645448,
         bestseller: false
     },
@@ -410,7 +410,7 @@ export const products = [
         category: "GraphicsCard",
         subCategory: "Nvidia",
         date: 1716643145448,
-        bestseller: false
+        bestseller: true
     },
     {
         _id: "aaabd",

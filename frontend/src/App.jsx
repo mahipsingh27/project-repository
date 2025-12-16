@@ -10,11 +10,24 @@ import Orders from './pages/Orders'
 import PlaceOrder from './pages/PlaceOrder'
 import Product from './pages/Product'
 import Navbar from './components/Navbar'
+import Hero from './components/Hero'
+import Cart from './pages/Cart'
+import Home from './pages/Home'
+import About from './pages/About'
+import Ram from './pages/Ram'
+import Smps from './pages/Smps'
+import Ssd from './pages/Ssd'
+import Footer from './components/Footer'
+import SearchBar from './components/SearchBar'
+import { ToastContainer } from 'react-toastify';
+import Verify from './pages/Verify'
 
 const App = () => {
   return (
-    <div className='px-4 sm:px-[5vm] md:px-[7vw] lg:px-[9vw]'>
+    <div className='px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]'>
+      <ToastContainer/>
       <Navbar/>
+      <SearchBar/>
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/product/:productId' element={<Product/>}/>
@@ -27,11 +40,14 @@ const App = () => {
         <Route path='/processor' element={<Processor/>}/>
         <Route path='/hdd' element={<Hdd/>}/>
         <Route path='/orders' element={<Orders/>}/>
+        <Route path='/verify' element={<Verify/>}/>
         <Route path='/place-order' element={<PlaceOrder/>}/>
         <Route path='/ram' element={<Ram/>}/>
         <Route path='/ssd' element={<Ssd/>}/>
         <Route path='/smps' element={<Smps/>}/>
-       </Routes>
+        <Route path='/hero' element={<Hero/>}/>
+      </Routes>
+      <Footer/>
     </div>
   )
 }
